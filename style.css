@@ -1,0 +1,275 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1460667069066-7514997310c9?dpr=2&auto=format&crop=entropy&fit=crop&w=1199&h=794&q=80&cs=tinysrgb') center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Style */
+
+.header-main {
+  width: 100%;
+  height: 10%;
+  padding: 20px 40px 0 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.search-box {
+  width: 225px;
+  height: 30px;
+  position: relative;
+  display: block;
+}
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+  margin: 5px 2px;
+  position: absolute;
+  overflow: hidden;
+  background: url('https://cdn1.iconfinder.com/data/icons/user-interface-elements/154/search-loop-512.png') center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.search-text {
+  width: 225px;
+  height: 100%;
+  margin-top: 3px;
+  position: absolute;
+  display: none;
+  text-indent: 25px;
+}
+
+.title {
+  width: 350px;
+  margin-left: -225px;
+  font: 30px 'Oswald', sans-serif;
+  font-weight: lighter;
+  color: #383737;
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+.ham {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  background: url('https://cdn1.iconfinder.com/data/icons/basic-ui-elements-plain/422/06_menu_stack-128.png') center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 2px solid black;
+}
+
+.top-hr {
+  position: relative;
+  border: 1px solid #ECECEC;
+}
+
+/* Body Style */
+
+.body-main {
+  width: 100%;
+  height: 70%;
+  padding: 0 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.input-main {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.input-p {
+  width: 100%;
+  font: 16px 'Oswald', sans-serif;
+  color: #383737;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.input-p a {
+  color: #EEEDED;
+  text-shadow: -1px 1px black;
+}
+
+.iput-text-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.input-text::-webkit-input-placeholder {
+  color: #EEEDED;
+  text-shadow: -1px 1px black;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0 auto 5px;
+  padding-left: 3px;
+  font: 18px Lora-Regular;
+  outline: none;
+  color: #EEEDED;
+  text-shadow: -1px 1px black;
+  border: 1px solid #EEEDED;
+  background: transparent;
+  resize: none;
+}
+
+textarea:focus{
+  border: 2px solid #00ffE9;
+}
+
+.bio {
+  height: 150px;
+}
+
+.input-text-wrapper a {
+  color: #A9A9A9;
+}
+
+.save {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  background: #00ffE9;
+}
+
+.triangle-main {
+  width: 55%;
+  height: 100%;
+  margin-top: 15px;
+  margin-left: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.back-triangle {
+  width: 0;
+  height: 0;
+  margin: 40px 0 0 20px;
+  position: relative;
+  border-bottom: 250px solid #00ffE9;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  transform: rotate(-50deg);
+}
+
+.front-triangle {
+    width: 100%;
+    padding-bottom: 335.55px; /* = width / sqrt(2) */
+    margin: -375px 0 0 30px;
+    position:relative;
+    overflow:hidden;
+    transform-origin: 0 100%;
+    transform: rotate(5deg);
+}
+.front-triangle:before{
+    content:'';
+    position:absolute;
+    width:100%; height:100%;
+    background-image: url('http://25.media.tumblr.com/tumblr_m9im5eNxv91qcu0ewo1_500.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform-origin:0 100%;
+    transform: rotate(45deg);
+}
+
+/* Footer Style */
+
+.bottom-hr {
+  width: 80%;
+  margin-top: 40px;
+  border: 1px solid #ECECEC;
+}
+
+.footer-main {
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.footer-opt {
+  margin-bottom: 10px;
+  font: 20px Lora-Regular;
+  color: #A9A9A9;
+  text-shadow: -1px 1px black;
+  border-bottom: 2px solid transparent;
+  z-index: 2;
+}
+
+a.footer-opt:hover {
+  border-bottom-color: #00ffE9;
+}
+
+/* Landing Page css */
+
+.body-container {
+  width: 100%;
+  height: 70%;
+  padding: 0 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.profile-main {
+  width: 40%;
+  height: 50%;
+  margin-top: -15px;
+  display: flex;
+  flex-flow: column;
+}
+
+.fullName {
+  width: 100%;
+  font: 45px 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.tagline {
+  width: 100%;
+  margin-top: -25px;
+  font-size: 18px;
+  color: black;
+  text-shadow: -1px 1px white;
+}
+
+.profile-bio {
+  width: 100%;
+  color: #EEEDED;
+  text-shadow: -1px 1px black;
+  letter-spacing: 1px;
+}
+
+/* View Friends Css */

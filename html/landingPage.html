@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="devMountainSocial">
+
+	<head>
+		<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DevMountain Social</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="file:///Users/brockgledhill/repos/dev-mt-in/style.css">
+	</head>
+
+	<body ng-controller="mainCtrl">
+
+		<!-- add <ui-view></ui-view> or <div ui-view></div> can also have <div ui-view=""></div> -->
+		<!-- <nav><a ui-sref="html view"><a> -->
+
+
+		<!-- Header -->
+		<header class="header-main">
+			<div class="search-box">
+				<div class="search-icon"></div>
+				<textarea class="search-text" wrap="off" maxlength="25"></textarea>
+			</div>
+			<a class="title" href="file:///Users/brockgledhill/repos/dev-mt-in/index.html">DevMountain Social</a>
+			<div class="ham"></div>
+		</header>
+
+		<hr class="top-hr"/>
+
+		<!-- Main Body Content -->
+		<div class="body-container">
+			<div class="profile-main">
+				<p class="fullName">Brock<br/>Gledhill</p>
+				<p class="tagline">SOME AWESOME TAGLINE ABOUT YOU</p>
+				<p class="profile-bio">You want it, you know you want it, and you know you
+						want me to give it to you. Doc, you don't just walk into a store
+						and ask for plutonium. Did you rip this off? Uh, you mean nobody's
+						asked you? Um, yeah, I'm on my way. You guys, take him in back and
+						I'll be right there. Well c'mon, this ain't no peep show.
+						<br/><br/>
+						What do you mean you've seen this, it's brand new. Don't tell me
+						anything. he's an idiot, comes from upbringing, parents were
+						probably idiots too. Lorraine, if you ever have a kid like that,
+						I'll disown you. he's an idiot, comes from upbringing, parents were
+						probably idiots too. Lorraine, if you ever have a kid like that,
+						I'll disown you. Who the hell is John F. Kennedy?
+				</p>
+			</div>
+			<div class="triangle-main">
+				<div class="back-triangle"></div>
+				<div class="front-triangle"></div>
+			</div>
+		</div>
+
+		<hr class="bottom-hr"/>
+
+		<!-- Footer Div -->
+		<div class="footer-main">
+			<a class="footer-opt" href="file:///Users/brockgledhill/repos/dev-mt-in/views/viewFriends.html">View Friends</a>
+			<a class="footer-opt" href="file:///Users/brockgledhill/repos/dev-mt-in/views/findFriends.html">Find Friends</a>
+			<a class="footer-opt" href="file:///Users/brockgledhill/repos/dev-mt-in/views/updateProfile.html">Update Profile</a>
+		</div>
+
+		<!-- JS Links -->
+		<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/mainCtrl.js"></script>
+		<script src="js/mainSrvc.js"></script>
+		
+	</body>
+</html>

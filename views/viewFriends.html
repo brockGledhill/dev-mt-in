@@ -11,6 +11,10 @@
 
 	<body ng-controller="mainCtrl">
 
+		<!-- add <ui-view></ui-view> or <div ui-view></div> can also have <div ui-view=""></div> -->
+		<!-- <nav><a ui-sref="html view"><a> -->
+
+
 		<!-- Header -->
 		<header class="header-main">
 			<div class="search-box">
@@ -24,8 +28,7 @@
 		<hr class="top-hr"/>
 
 		<!-- Main Body Content -->
-
-			<div class="body-main">
+		<div class="body-main">
 			<div class="input-main">
 				<p class="input-p">Welcome to
 					<a href="https://www.devmountain.com">DevMountain</a> Social
@@ -36,34 +39,32 @@
 					<textarea class="input-text" placeholder="Tagline"></textarea>
 					<textarea class="input-text" placeholder="Profile Image Url"></textarea>
 					<textarea class="input-text bio" placeholder="Bio"></textarea>
-					<div class="save"><a ui-sref="home">Save Changes</a></div>
+					<div class="save"><a href="file:///Users/brockgledhill/repos/dev-mt-in/views/landingPage.html">Save Changes</a></div>
 				</div>
 			</div>
-
 			<div class="triangle-main">
 				<div class="back-triangle"></div>
 				<div class="front-triangle"></div>
 			</div>
 		</div>
-		<ui-view></ui-view>
-		<hr class="bottom-hr"/>
 
+		<hr class="bottom-hr"/>
+		<div ui-view></div>
 		<!-- Footer Div -->
 		<div class="footer-main">
-			<a class="footer-opt" ui-sref="viewFriends">View Friends</a>
-			<a class="footer-opt" ui-sref="findFriends">Find Friends</a>
-			<a class="footer-opt" ui-sref="updateProfile">Update Profile</a>
+			<a class="footer-opt" href="file:///Users/brockgledhill/repos/dev-mt-in/views/viewFriends.html">View Friends</a>
+			<a class="footer-opt" href="file:///Users/brockgledhill/repos/dev-mt-in/views/findFriends.html">Find Friends</a>
+			<a class="footer-opt" href="file:///Users/brockgledhill/repos/dev-mt-in/views/updateProfile.html">Update Profile</a>
 		</div>
-
 
 		<!-- JS Links -->
 		<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-		<script src="file:///Users/brockgledhill/repos/dev-mt-in/js/script.js"></script>
-		<script src="file:///Users/brockgledhill/repos/dev-mt-in/js/app.js"></script>
-		<script src="file:///Users/brockgledhill/repos/dev-mt-in/js/mainCtrl.js"></script>
-		<script src="file:///Users/brockgledhill/repos/dev-mt-in/js/mainSrvc.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/mainCtrl.js"></script>
+		<script src="js/mainSrvc.js"></script>
 
 	</body>
 </html>
