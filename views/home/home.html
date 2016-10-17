@@ -1,0 +1,24 @@
+<div class="body-main">
+
+	<div class="input-main">
+		<p class="input-p">Welcome to
+			<a ui-sref="home">DevMountain</a> Social
+			<br/> Add Some Info So Friends Can Find You
+		</p>
+		<div class="input-text-wrapper">
+			<div class="fullName">
+				<div class="name"><textarea type="text" placeholder="First Name" ng-model="currentUser.firstName"></textarea></div>
+				<div class="name"><textarea type="text" placeholder="Last Name" ng-model="currentUser.lastName"></textarea></div>
+			</div>
+			<textarea class="input-text" type="text" placeholder="Tagline" ng-model="currentUser.tagline"></textarea>
+			<textarea class="input-text" type="text" placeholder="Profile Image Url" ng-model="currentUser.profilePic"></textarea>
+			<textarea class="input-text bio" type="text" placeholder="Bio" ng-model="currentUser.bio"></textarea>
+			<button class="save" ng-click="createUser()">Save Changes</button>
+		</div>
+	</div>
+
+	<div class="triangle-main">
+		<div class="back-triangle"></div>
+		<div class="front-triangle"></div>
+	</div>
+</div>

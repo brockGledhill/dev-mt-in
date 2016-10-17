@@ -1,0 +1,21 @@
+<div class="body-main">
+	<div class="profile-main">
+		<div class="firstName">{{currentUser.firstName}}</div>
+		<div class="lastName">{{currentUser.lastName}}</div>
+		<div class="tagline">{{currentUser.tagline}}</div>
+		<p class="profile-bio">{{currentUser.bio}}</p>
+		</div>
+	<div class="friends-main">
+		<div class="finder-main">
+			<textarea class="find-friend" placeholder="Search For Friends" ng-model="searchName" ng-keyup="keyPress()"></textarea>
+		</div>
+		<div class="friends-profiles">
+			<div class="friend-box" ng-repeat="user in $scope.users |filter: userFilter | orderBy: sortProp : sortDirection" ng-style="{'background': 'url(' + user.profilePic + ') no-repeat center', 'background-size': 'cover'}">
+				<div class="box-hover">
+					<div class="friend-name">{{friend.name}}</div>
+					<div class="view-profile" ui-sref="friendProfile({id: {{friend._id}}})">View Profile</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

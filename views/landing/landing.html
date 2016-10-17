@@ -1,0 +1,12 @@
+<div class="body-main">
+	<div class="profile-main">
+		<div class="firstName">{{currentUser.firstName}}</div>
+		<div class="lastName">{{currentUser.lastName}}</div>
+		<div class="tagline">{{currentUser.tagline}}</div>
+		<p class="profile-bio">{{currentUser.bio}}</p>
+	</div>
+	<div class="triangle-main">
+		<div class="back-triangle"></div>
+		<div class="front-triangle" ng-style="{'background': 'url(' + currentUser.profilePic + ') no-repeat center', 'background-size': 'cover'}"></div>
+	</div>
+</div>

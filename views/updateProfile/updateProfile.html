@@ -1,0 +1,18 @@
+<div class="body-main">
+	<div class="profile-main">
+		<div class="firstName">{{currentUser.firstName}}</div>
+		<div class="lastName">{{currentUser.lastName}}</div>
+		<div class="tagline">{{currentUser.tagline}}</div>
+		<p class="profile-bio">{{currentUser.bio}}
+	</div>
+	<div class="update-profile-main">
+		<div class="profile-settings">Profile Settings</div>
+		<div class="input-text-wrapper">
+			<textarea class="input-text pro-back" placeholder="First Name" ng-model="currentUser.firstName"></textarea>
+			<textarea class="input-text pro-back" placeholder="Last Name" ng-model="currentUser.lastName"></textarea>
+			<textarea class="input-text pro-back" placeholder="Tagline" ng-model="currentUser.tagline"></textarea>
+			<textarea class="input-text pro-back" placeholder="Profile Image Url" ng-model="currentUser.profilePic"></textarea>
+			<textarea class="input-text pro-back bio" placeholder="Bio" ng-model="currentUser.bio"></textarea>
+			<div class="save"><a ng-click="updateUser()">Save Changes</a></div>
+		</div>
+	</div>

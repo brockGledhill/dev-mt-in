@@ -1,0 +1,26 @@
+<div class="body-main">
+	<div class="profile-main">
+		<div class="firstName">{{currentUser.firstName}}</div>
+		<div class="lastName">{{currentUser.lastName}}</div>
+		<div class="tagline">{{currentUser.tagline}}</div>
+		<p class="profile-bio">{{currentUser.bio}}</p>
+	</div>
+	<div class="friends-main">
+		<div class="friend-finder">
+			<div class="sorter">Ascending</div>
+			<div class="friend-search">
+				<input class="friend-search-box" placeholder="Search by Friend Name"/>
+				<div class="friend-title">Friends</div>
+				<div class="friend-search-icon" ui-sref="findFriends"></div>
+			</div>
+		</div>
+		<div class="friends-profiles"><button ng-click="getUsers()"></button>
+			<div class="friend-box" ng-repeat="user in users |filter: userFilter | orderBy: sortProp : sortDirection" ng-style="{'background': 'url(' + user.profilePic + ') no-repeat center', 'background-size': 'cover'}">
+				<div class="box-hover">
+					<div class="friend-name">{{user.firstName + ' ' + user.lastName}}</div>
+					<div class="view-profile" ui-sref="friendProfile({id: {{user._id}}})">View Profile</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
