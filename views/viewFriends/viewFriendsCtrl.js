@@ -3,14 +3,9 @@ angular.module('devMountainSocial').controller('viewFriendsCtrl', function($scop
 $scope.sortProp = '';
 $scope.sortDirection = true;
 
-// $scope.users = mainSrvc.getUsers();
-
 $scope.currentUser = JSON.parse(localStorage.getItem('user'));
 
-$scope.getUsers = function() {
-  mainSrvc.getUsers().then(function(response){
-    $scope.users = response.data;
-  });
-};
+// $scope.getFriends = mainSrvc.getUsers();
+
 
 });

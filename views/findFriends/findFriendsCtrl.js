@@ -2,8 +2,8 @@ angular.module('devMountainSocial').controller('findFriendsCtrl', function($scop
 
   $scope.currentUser = JSON.parse(localStorage.getItem('user'));
 
-  $scope.searchFriends = function() {
-    mainSrvc.searchFriends($scope.searchName).then(function(response){
+  $scope.getUsers = function() {
+    mainSrvc.getUsers().then(function(response){
       $scope.users = response.data;
     });
   };

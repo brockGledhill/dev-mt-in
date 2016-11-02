@@ -247,7 +247,7 @@ a.footer-opt {
 }
 
 
-/* Home Page css */
+/* Landing Page css */
 
 .thumbnail-main {
     width: 5%;
@@ -367,6 +367,7 @@ a.footer-opt {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .friend-finder {
@@ -455,6 +456,7 @@ a.footer-opt {
     width: 45%;
     height: 32%;
     border: 2px solid #A9A9A9;
+    margin-bottom: 7px;
     overflow: hidden;
 }
 
