@@ -70,7 +70,6 @@ html, body {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    ;
 }
 
 .input-p {

@@ -1,6 +1,6 @@
 var devMountainSocial = angular.module('devMountainSocial', ['ui.router']);
 
-devMountainSocial.config(function($stateProvider, $urlRouterProvider) {
+devMountainSocial.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise('/');
 
@@ -22,7 +22,7 @@ devMountainSocial.config(function($stateProvider, $urlRouterProvider) {
         url: '/viewFriends',
         templateUrl: 'views/viewFriends/viewFriends.html',
         controller: 'viewFriendsCtrl'
-        //do a resolve for every state so it can't go to the view before creating a profile (also do a swal to alert to create a profile)
+            //do a resolve for every state so it can't go to the view before creating a profile (also do a swal to alert to create a profile)
     })
 
     .state('findFriends', {
@@ -43,6 +43,8 @@ devMountainSocial.config(function($stateProvider, $urlRouterProvider) {
         controller: 'friendProfileCtrl'
     });
 
+    //Gets rid of URL #//
+    $locationProvider.html5Mode(true);
 
 
 
